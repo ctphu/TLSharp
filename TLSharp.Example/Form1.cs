@@ -59,6 +59,7 @@ namespace TLSharp.Example
                 MessageBox.Show("Nhap vao Telegram Code truoc khi login. Neu chua co Code thi nhan nut GETCODE");
                 return;
             }
+            teleApi.PhoneNumber = txtNumber.Text;
             await teleApi.MakeAuthAsync(txtCode.Text);
             
             //var user = await client.MakeAuthAsync(NumberToAuthenticate, hash, code);

@@ -76,6 +76,8 @@ namespace TLSharp.Core
             await _sender.Receive(invokewithLayer);
 
             dcOptions = ((TLConfig)invokewithLayer.Response).DcOptions.ToList();
+            //dcOptions[5].IpAddress = "91.108.56.165";
+            //dcOptions[5].Ipv6 = false;
         }
 
         private async Task ReconnectToDcAsync(int dcId)
@@ -90,8 +92,11 @@ namespace TLSharp.Core
                 exported = await SendRequestAsync<TLExportedAuthorization>(exportAuthorization);
             }
 
-            var dc = dcOptions.First(d => d.Id == dcId);
-
+            var dc = dcOptions.First(d => d.Id == dcId && d.Ipv6 == false);
+            //if(dcId == 5)
+            //{
+            //    dc.IpAddress = "91.108.56.165";
+            //}
             _transport = new TcpTransport(dc.IpAddress, dc.Port, _handler);
             _session.ServerAddress = dc.IpAddress;
             _session.Port = dc.Port;
