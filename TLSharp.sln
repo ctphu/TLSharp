@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLSharp.Core", "TLSharp.Core\TLSharp.Core.csproj", "{400D2544-1CC6-4D8A-A62C-2292D9947A16}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLSharp.Tests.NUnit", "TLSharp.Tests.NUnit\TLSharp.Tests.NUnit.csproj", "{E90B705B-19FA-43BA-B952-69957976D12C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLSharp.Example", "TLSharp.Example\TLSharp.Example.csproj", "{D59CF2E9-EE93-4407-B75D-3AC525FC3348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleConsole", "SampleConsole\SampleConsole.csproj", "{3898A8CD-1C91-45A2-AB09-36CA9E363098}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{D59CF2E9-EE93-4407-B75D-3AC525FC3348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D59CF2E9-EE93-4407-B75D-3AC525FC3348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D59CF2E9-EE93-4407-B75D-3AC525FC3348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3898A8CD-1C91-45A2-AB09-36CA9E363098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3898A8CD-1C91-45A2-AB09-36CA9E363098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3898A8CD-1C91-45A2-AB09-36CA9E363098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3898A8CD-1C91-45A2-AB09-36CA9E363098}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
